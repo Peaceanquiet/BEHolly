@@ -7,16 +7,7 @@
     </head>
     <body>
         <h1> My Resume </h1>
-        <input type = "text" id = "urlInput" placeholder="My Resume is missing, oh no!" style= "width: 300px;" />
-        <button id = "loadDoc"> Load Document </button>
-        <iframe id = "docViewer" style = "width:100%; height: 600px; margin-top: 10px;" src="docs\assets\BEHolly_Resume.docx"> </iframe>
-        <a href="index.html"> Back </a>
-        <script>
-        document.getElementById('loadDoc').addEventListener('click', function () {
-            let url = document.getElementById('urlInput').value;
-            let viewerUrl = `https://docs.google.com/gview?url=${encodeURIComponent(url)}&embedded=true`;
-            document.getElementById('docViewer').src = viewerUrl;
-        });
+        <p> PDF File <a href="docs\assets\BEHolly_Resume.pdf"> ex </a>.</p>
     </script>
     </body>
 </html>
